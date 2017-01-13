@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <style>
+        section>pre{
+            color: red;
+        }
+
+        .yk{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">SVN</a></li>
+            <li><a href="#">iOS</a></li>
+            <li><a href="#">VB.Net</a></li>
+            <li><a href="#">Java</a></li>
+            <li><a href="#">PHP</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<header>
+    <h1 >我是标题！<small>我是副标题</small></h1>
+</header>
+
+<article>
+    <section>
+        <p>这是内容</p>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1" style="background-color: blue">A</div>
+                <div class="col-lg-11" style="background-color: red">B</div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-2" style="background-color: blue">C</div>
+                <div class="col-lg-10" style="background-color: red">D</div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4" style="background-color: blue">E</div>
+                <div class="col-lg-8" style="background-color: red">F</div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-5" style="background-color: blue">G</div>
+                <div class="col-lg-7" style="background-color: red">H</div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-8" style="background-color: blue">I</div>
+                <div class="col-lg-4" style="background-color: red">G</div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-9" style="background-color: blue">K</div>
+                <div class="col-lg-3" style="background-color: red">L</div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-11" style="background-color: blue">M</div>
+                <div class="col-lg-1" style="background-color: red">N</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+       <pre id="yk">
+           &lt;h1&gt;这是h1&lt;/h1&gt;
+           &lt;p&gt;这是p&lt;/p&gt;
+           &lt;header&gt;这是header&lt;/header&gt;
+       </pre>
+    </section>
+</article>
+
+<div class="container" style="padding: 100px 50px 10px;" >
+    <button type="button" class="btn btn-default" title="Popover title"
+            data-container="body" data-toggle="popover" data-placement="left"
+            data-content="左侧的 Popover 中的一些内容">
+        左侧的 Popover
+    </button>
+    <button type="button" class="btn btn-primary" title="Popover title"
+            data-container="body" data-toggle="popover" data-placement="top"
+            data-content="顶部的 Popover 中的一些内容">
+        顶部的 Popover
+    </button>
+    <button type="button" class="btn btn-success" title="Popover title"
+            data-container="body" data-toggle="popover" data-placement="bottom"
+            data-content="底部的 Popover 中的一些内容">
+        底部的 Popover
+    </button>
+    <button type="button" class="btn btn-warning" title="Popover title"
+            data-container="body" data-toggle="popover" data-placement="right"
+            data-content="右侧的 Popover 中的一些内容">
+        右侧的 Popover
+    </button>
+</div>
+
+<footer>
+    <address>
+        <a href="https://www.baidu.com">我是footer</a>
+    </address>
+</footer>
+<script>
+    $(function () {
+        $("[data-toggle='popover']").popover();
+    });
+    document.getElementById('yk').style.color="blue";
+</script>
+</body>
+</html>
